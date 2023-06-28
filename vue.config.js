@@ -1,5 +1,10 @@
 module.exports = {
     outputDir: 'docs',
-    publicPath: './',
-    assetsDir: './'
+    publicPath: '/weather-app_v/',
+    assetsDir: './',
+    configureWebpack: {
+        output: {
+          publicPath: '/weather-app_v/'
+        }
+      }
 }
